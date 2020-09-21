@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Magasin en ligne d'ETIC">
+    <meta name="author" content="Sadsitha Lokuge">
+    <title>ETIC Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="config.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+    <section class="hero is-fullheight">
+        <div id="grid-container" class="hero-body">
+            <div class="full-height d-flex items-center content-center">
+                <a id="previous" class="button">
+                    <span class="icon is-small">
+                        <i class="fas fa-step-backward"></i>
+                    </span>
+                </a>
+            </div>
+            <div>
+                <h2 id="product-name" class="title">
+                    Product name
+                </h2>
+                <p id="product-description">
+                    Description
+                </p>
+                <div id="middle-container" class="full-width d-flex flex-column items-center content-center">
+                    <img id="product-image" src="images/logo.png" alt="Product image" title="Product title" />
+                    <button class="button is-medium" id="buy">Acheter</button>
+                </div>
+            </div>
+            <div class="full-height d-flex items-center content-center">
+                <a id="next" class="button">
+                    <span class="icon is-small">
+                        <i class="fas fa-step-forward"></i>
+                    </span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="logo_etic_container">
+        <img src="images/logo_etic.png" id="logo_etic_big" class="pulse" alt="ETIC INSA"></img>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
