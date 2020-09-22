@@ -2,13 +2,13 @@ const stripe = Stripe(STRIPE_PK);
 
 let currentProductIndex = 0;
 
-function buy() {
-    const currentProduct = PRODUCTS[currentProductIndex];
+var swiper;
 
-    if (currentProduct && currentProduct.stripe_price) {
+function buy(product) {
+    if (product && product.stripe_price) {
         stripe
             .redirectToCheckout({
-                lineItems: [{ price: currentProduct.stripe_price, quantity: 1 }],
+                lineItems: [{ price: product.stripe_price, quantity: 1 }],
                 successUrl: SITE_URL + "/success.html",
                 cancelUrl: SITE_URL + "/cancel.html",
                 mode: 'payment',
@@ -24,57 +24,54 @@ function buy() {
 
 };
 
-function nextProduct() {
-    if (currentProductIndex < (PRODUCTS.length - 1)) {
-        ++currentProductIndex;
-    } else {
-        currentProductIndex = 0;
-    }
-    updateProductPage();
-}
 
-function previousProduct() {
-    if (currentProductIndex > 0) {
-        --currentProductIndex;
-    } else {
-        currentProductIndex = PRODUCTS.length - 1;
-    }
-    updateProductPage();
-}
+function createProducts() {
+    const productTemplate = document.getElementById("product-template");
 
-function updateProductPage() {
-    const currentProduct = PRODUCTS[currentProductIndex];
+    PRODUCTS.forEach(product => {
+        const createdProduct = productTemplate.cloneNode(true);
+        createdProduct.id = "";
 
-    if (currentProduct) {
-        // Update title
-        const titleElem = document.getElementById("product-name");
-        titleElem.innerText = currentProduct.name;
+        // Set title
+        const titleElem = createdProduct.querySelector(".product-name");
+        titleElem.innerText = product.name;
 
-        // Update description
-        const descriptionElem = document.getElementById("product-description");
-        descriptionElem.innerText = currentProduct.description;
+        // Set description
+        const descriptionElem = createdProduct.querySelector(".product-description");
+        descriptionElem.innerText = product.description;
 
-        // Update price
-        const priceElem = document.getElementById("buy");
-        priceElem.innerText = "Acheter pour " + currentProduct.price;
+        // Set price
+        const priceElem = createdProduct.querySelector(".buy");
+        priceElem.innerText = "Acheter pour " + product.price;
 
-        // Update image
-        const imageElem = document.getElementById("product-image");
-        imageElem.src = currentProduct.image || "images/logo.png";
-        imageElem.alt = currentProduct.name;
-        imageElem.title = currentProduct.name;
-    }
+        // Set image
+        const imageElem = createdProduct.querySelector(".product-image");
+        imageElem.src = product.image || "images/logo.png";
+        imageElem.alt = product.name;
+        imageElem.title = product.name;
+
+        // Set click listener
+        priceElem.addEventListener("click", function () { buy(product) });
+
+        productTemplate.parentElement.appendChild(createdProduct);
+    });
+
+    productTemplate.remove();
 
 }
 
 function initialise() {
-    // Add event listeners to buttons
-    document.getElementById("buy").addEventListener("click", buy);
-    document.getElementById("next").addEventListener("click", nextProduct);
-    document.getElementById("previous").addEventListener("click", previousProduct);
 
-    // Initialise product
-    updateProductPage();
+    // Init products
+    createProducts();
+
+    // Init Swiper
+    swiper = new Swiper('.swiper-container', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
 }
 
 initialise();
