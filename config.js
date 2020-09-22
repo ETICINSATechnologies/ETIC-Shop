@@ -11,4 +11,8 @@ var PRODUCTS = [
         id: "masque", name: "Masque ETIC", price: "5€", stripe_price: "price_1HTxuFEUIshe7qGlTvWEaXJ3", image: "images/masque.png",
         description: "Pour ceux qui veulent montrer qu'ils sont membres de la meilleure JE de France et ne pas propager le covid à même temps !"
     },
+    {
+        id: "casquette", name: "Casquette ETIC", price: "5€", stripe_price: "price_1HTxuFEUIshe7qGlTvWEaXJ3", image: "images/masque.png",
+        description: "Pour ceux qui veulent montrer qu'ils sont membres de la meilleure JE de France et ne pas propager le covid à même temps !"
+    },
 ]
