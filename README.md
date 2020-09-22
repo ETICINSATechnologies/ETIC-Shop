@@ -2,6 +2,7 @@
 > A online payment portal for ETIC INSA.
 
 ETIC-Shop is an easily configurable payment portal that is meant to work with Stripe Checkout.
+[Link](https://shop.etic-insa.com/).
 
 ![](screenshots/screenshot-1.png)
 
