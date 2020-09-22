@@ -8,6 +8,14 @@
 
 /** Classe **/
 
+.swiper-slide {
+    max-height: 100vh;
+}
+
+.middle-container {
+    max-height: 70vh;
+}
+
 .d-flex {
     display: flex;
 }
