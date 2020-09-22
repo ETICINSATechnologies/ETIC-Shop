@@ -3,7 +3,7 @@
 
 ETIC-Shop is an easily configurable payment portal that is meant to work with Stripe Checkout.
 
-![](screenshots/screenshot1.png)
+![](screenshots/screenshot-1.png)
 
 ## Usage example
 
