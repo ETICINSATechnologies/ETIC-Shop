@@ -6,7 +6,12 @@
     --main-btn-color: #6ba37e;
 }
 
-/** Classe **/
+/** Classes **/
+
+.product-image {
+    max-width: 100%;
+    max-height: 80%;
+}
 
 .swiper-slide {
     max-height: 100vh;
@@ -42,6 +47,16 @@
 
 .button {
     background-color: var(--main-btn-color);
+}
+
+/** 
+    Hide the pagination on screens that are very small (on landscape mode)
+    Otherwise it blocks the 'Acheter' button
+**/
+@media only screen and (max-height: 550px) {
+    .swiper-pagination {
+        display: none;
+    }
 }
 
 /** Animations **/
