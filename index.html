@@ -18,6 +18,10 @@
 
 <body>
     <div class="swiper-container">
+        <div id="basket-container">
+            <img id="basket-image" src="images/shopping-basket-solid.svg" alt="Panier" />
+            <p id="basket-counter">0</p>
+        </div>
         <div class="swiper-wrapper">
             <div id="product-template" class="swiper-slide d-flex flex-column">
                 <h2 class="title product-name">
@@ -28,7 +32,7 @@
                 </p>
                 <div class="middle-container full-width d-flex flex-column items-center content-center">
                     <img class="product-image" src="images/logo.png" alt="Product image" title="Product title" />
-                    <button class="button is-medium buy">Acheter</button>
+                    <button class="button is-medium add-to-basket">Ajouter au panier</button>
                 </div>
             </div>
         </div>
