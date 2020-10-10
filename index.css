@@ -48,6 +48,8 @@
 
 .swiper-slide {
     max-height: 100vh;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .middle-container {
