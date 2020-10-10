@@ -36,6 +36,10 @@
 
 /** Classes **/
 
+.swiper-container {
+    overflow-y: auto;
+}
+
 .hidden {
     visibility: hidden;
     display: none;
