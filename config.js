@@ -8,11 +8,11 @@ var PRODUCTS = [
         description: "Pour ceux qui veulent montrer qu'ils sont membres de la meilleure JE de France et ne pas avoir froid à même temps !"
     },
     {
-        id: "masque", name: "Masque ETIC", price: "3€", stripe_price: "price_1HaoAyGEPGXSOKuW5j1NsOtz", image: "images/masque.png",
+        id: "masque", name: "Masque ETIC", price: "6€", stripe_price: "price_1HbX4PGEPGXSOKuWrC9zVWBZ", image: "images/masque.png",
         description: "Pour ceux qui veulent montrer qu'ils sont membres de la meilleure JE de France et ne pas propager le covid à même temps !"
     },
     {
-        id: "tshirt", name: "T-Shirt ETIC", price: "5€", stripe_price: "price_1HaoDsGEPGXSOKuWjg1rHmhL",
+        id: "tshirt", name: "T-Shirt ETIC", price: "5€", stripe_price: "price_1HaoDsGEPGXSOKuWjg1rHmhL", image: "images/tshirt.jpg",
         description: "Pour ceux qui veulent montrer qu'ils sont membres de la meilleure JE de France !"
     },
 ]
