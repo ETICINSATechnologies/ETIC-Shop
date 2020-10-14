@@ -4,7 +4,7 @@ var SITE_URL = "https://shop.etic-insa.com";
 
 var PRODUCTS = [
     {
-        id: "pull", name: "Pull ETIC", price: "20€", stripe_price: "price_1Hao7qGEPGXSOKuWI9MXk4ZB", image: "images/pull.png",
+        id: "pull", name: "Pull ETIC", price: "24€", stripe_price: "price_1HcF8IGEPGXSOKuWBqDDntHt", image: "images/pull.png",
         description: "Pour ceux qui veulent montrer qu'ils sont membres de la meilleure JE de France et ne pas avoir froid à même temps !"
     },
     {
@@ -12,7 +12,7 @@ var PRODUCTS = [
         description: "Pour ceux qui veulent montrer qu'ils sont membres de la meilleure JE de France et ne pas propager le covid à même temps !"
     },
     {
-        id: "tshirt", name: "T-Shirt ETIC", price: "5€", stripe_price: "price_1HaoDsGEPGXSOKuWjg1rHmhL", image: "images/tshirt.jpg",
+        id: "tshirt", name: "T-Shirt ETIC", price: "6€", stripe_price: "price_1HcF6LGEPGXSOKuWOFo3F73s", image: "images/tshirt.jpg",
         description: "Pour ceux qui veulent montrer qu'ils sont membres de la meilleure JE de France !"
     },
 ]
