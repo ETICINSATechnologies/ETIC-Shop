@@ -42,11 +42,11 @@ function buyBasket() {
 function addToBasket(product) {
     if (product && product.stripe_price) {
         shoppingBasket[product.id]["count"] += 1;
-        const totalProducts = Object.values(shoppingBasket).reduce(function (acc, curr) {
-            return acc + curr["count"];
+        const totalPrice = Object.values(shoppingBasket).reduce(function (acc, curr) {
+            return acc + (curr["count"] * curr["product"]["price"]);
         }, 0);
         const basketCounter = document.getElementById("basket-counter");
-        basketCounter.innerText = totalProducts;
+        basketCounter.innerText = totalPrice.toFixed(2) + "€";
     }
 };
 
@@ -67,7 +67,7 @@ function createProducts() {
 
         // Set price
         const priceElem = createdProduct.querySelector(".add-to-basket");
-        priceElem.innerText = "Ajouter au panier : " + product.price;
+        priceElem.innerText = "Ajouter au panier : " + product.price.toFixed(2) + "€";
 
         // Set image
         const imageElem = createdProduct.querySelector(".product-image");
