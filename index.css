@@ -3,7 +3,7 @@
 :root {
     --main-bg-color: #ffffff;
     --secondary-btn-color: #005360;
-    --main-btn-color: #6ba37e;
+    --main-btn-color: #286D6E;
 }
 
 /** Ids **/
@@ -81,6 +81,7 @@
 }
 
 .button {
+    color: #ffffff;
     background-color: var(--main-btn-color);
 }
 
