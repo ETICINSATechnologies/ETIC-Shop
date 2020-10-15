@@ -85,6 +85,11 @@
     background-color: var(--main-btn-color);
 }
 
+.button:hover {
+    color: #ffffff;
+    box-shadow: 2px 2px 2px 0 var(--secondary-btn-color);
+}
+
 /** 
     Hide the pagination on screens that are very small (on landscape mode)
     Otherwise it blocks the 'Acheter' button
