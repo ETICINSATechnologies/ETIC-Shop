@@ -5,7 +5,7 @@ var SITE_URL = "https://shop.etic-insa.com";
 var PRODUCTS = [
   
     {
-        id: "tshirt_blue", name: "T-Shirt Blue ETIC", price: 6, stripe_price: "price_1HcF6LGEPGXSOKuWOFo3F73s", image: "images/tshirt.jpg",
+        id: "tshirt_blue", name: "T-Shirt Blue ETIC", price: 6, stripe_price: "price_1HcF6LGEPGXSOKuWOFo3F73s", image: "images/tshirt_blue.jpg",
         description: "Pour ceux qui veulent montrer qu'ils sont membres de la meilleure JE de France !"
     },
     {
