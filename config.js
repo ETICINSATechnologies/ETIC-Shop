@@ -9,11 +9,11 @@ var PRODUCTS = [
         description: "Pour ceux qui veulent montrer qu'ils sont membres de la meilleure JE de France !"
     },
     {
-        id: "tshirt_white", name: "T-Shirt Blanc ETIC", price: 7.5, stripe_price: "price_1HpxlfGEPGXSOKuWUAftYYUn", image: "images/tshirt_white.jpg",
+        id: "tshirt_white", name: "T-Shirt Blanc ETIC", price: 7.5, stripe_price: "price_1HpxlfGEPGXSOKuWUAftYYUn", image: "images/tshirt_white.png",
         description: "Pour ceux qui veulent montrer qu'ils sont membres de la meilleure JE de France !"
     },
     {
-        id: "tshirt_black", name: "T-Shirt Noir ETIC", price: 6, stripe_price: "price_1HpxnVGEPGXSOKuWWEuYYyHP", image: "images/tshirt_black.jpg",
+        id: "tshirt_black", name: "T-Shirt Noir ETIC", price: 6, stripe_price: "price_1HpxnVGEPGXSOKuWWEuYYyHP", image: "images/tshirt_black.png",
         description: "Pour ceux qui veulent montrer qu'ils sont membres de la meilleure JE de France !"
     },
     {
